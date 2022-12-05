@@ -1,0 +1,517 @@
+/* single line comment */
+/* block
+of comments
+*/
+form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+    margin-bottom: .5em;
+}
+
+textarea, input{
+    margin-bottom: .5em;
+}
+#hero{
+    text-align: center;
+}
+form button{
+    padding: .5em;
+}
+
+
+table{
+    width: 60%;
+    border: 1px solid #3f2860;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td,th{
+    padding: 5px;
+    border: 1px solid #3f2860;
+}
+
+caption{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+tr:nth-of-type(even){
+    background: #92c1c5;
+}
+textarea{
+    background-color: #555555;
+}
+input{
+    background-color: #555555;
+    color: #0aaa7a;
+}
+::placeholder{
+    color: rgb(182, 182, 182);
+}
+
+
+/* full screen */
+@media(min-width:1024px){
+/*  embedded styling */
+body{
+    margin: 0;
+    background-color: #5cbd58;
+    color: #7f7fe4; /* text color*/
+    font-family: Verdana,Arial,sans-serif;
+}
+header{
+    background-color: #40407A;
+    color: #fff;
+    background-size: 100% 100%;
+    font-size: 120%;
+    min-height: 100px;
+    margin-top: 50px;
+}
+header a:link{text-decoration: none;display: block;color: #40407A;}
+header a:visited{text-decoration: none;display: block;color: #f5f5f5;}
+header a:hover{text-decoration: none;display: block;color: #fff;}
+
+h1{
+    line-height: 25%;
+    padding-left: 2em;
+}
+h2{
+    font-size: 200%;
+}
+h3{
+    font-size: 150%;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #fff;
+    margin: 0;
+    padding-right: 0;
+    font-weight: bold;
+    padding: .5em;
+    width: 100%;
+    z-index: 9999; /* ensures it is on top */
+}
+nav a{
+    text-decoration: none; /*removes the hyperlink underline*/
+    display: block;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+nav li{
+    width: 7em;
+    padding: 0 1em 0 1em;
+    display: inline;
+}
+
+
+
+nav a:link{color:#3F2860}
+nav a:visited{color: #497777;}
+nav a:hover{color: #a26100;border: 3px inset #3333}
+
+
+footer{
+    background-color: #80cbc4;
+    font-size: .60em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    padding: 1em;
+}
+
+
+/*  classes styling */
+
+.studio{
+    color: #40407A;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+/*  id styling */
+/* purpose of of this id is to wrap the text */
+#wrapper{
+    margin: auto;
+    width: 80%;
+    background-color: #f5f5f5;
+    padding:1em;
+}
+
+
+
+
+
+
+
+/* Home page, header will be larger */
+.home{
+    padding-left: 8em;
+}
+
+/* Other pages, header will be slightly smaller */
+.content{
+    padding-left: 8em;
+    padding-top: 1em;
+}
+
+
+
+
+#mobile{
+    display: none;
+}
+
+#desktop{
+    display: inline;
+}
+
+
+section{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+
+#flow{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+
+
+
+/* global property */
+* {box-sizing: border-box;}
+
+}
+
+/* half screen */
+@media(min-width:600px){
+    /*  embedded styling */
+    body{
+        margin: 0;
+        background-color: #5cbd58;
+        color: #7f7fe4; /* text color*/
+        font-family: Verdana,Arial,sans-serif;
+    }
+    header{
+        background-color: #5cbd58;
+        color: #fff;
+        background-size: 100% 100%;
+        font-size: 120%;
+        min-height: 100px;
+    }
+    header a:link{text-decoration: none;display: block;color: #ffffff;}
+    header a:visited{text-decoration: none;display: block;color: #f5f5f5;}
+    header a:hover{text-decoration: none;display: block;color: #fff;}
+    
+    /* h1{
+        line-height: 200%;
+        padding-top: 50px;
+        padding-left: 2em;
+    } */
+
+    h2{
+        font-size: 200%;
+    }
+    
+    nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        margin: 0;
+        font-weight: bold;
+        padding: .5em;
+        width: 100%;
+        z-index: 9999; /* ensures it is on top */
+    }
+    nav a{
+        text-decoration: none; /*removes the hyperlink underline*/
+        display: block;
+        text-align: center;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0;
+        font-size: 1.2em
+    }
+    
+    nav li{
+        width: 7em;
+        padding: 0 1em 0 1em;
+        text-align: center;
+    }
+    
+    
+    
+    nav a:link{color:#0aaa7a}
+    nav a:visited{color: #3e6666;}
+    nav a:hover{color: #a26100;border: 3px inset #3333}
+    
+    
+    footer{
+        background-color: #000000;
+        font-size: 1em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+    }
+    
+    /*  classes styling */
+    
+    .studio{
+        color: #b0b0be;
+        font-style: italic;
+    }
+    /*  id styling */
+    /* purpose of of this id is to wrap the text */
+    #wrapper{
+        background-color: #2b2b2b;
+        padding:2em;
+    }
+    /* Home page, header will be larger */
+    .home{
+        height: 20vh;
+        padding-left: 10%;
+        padding-top: 2em;
+    }
+    
+    /* Other pages, header will be slightly smaller */
+
+    
+    #mobile{
+        display: none;
+    }
+    
+    #desktop{
+        display: inline;
+    }
+    
+    
+    section{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
+    
+    #flow{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    #clear{
+        clear: both;
+    }
+    
+    
+    
+    /* global property */
+    * {box-sizing: border-box;}
+    
+    }
+
+/* mobile screen */
+@media(max-width:600px){
+    /*  embedded styling */
+    body{
+        margin: 0;
+        background-color: #5cbd58;
+        color: #7f7fe4; /* text color*/
+        font-family: Verdana,Arial,sans-serif;
+    }
+    header{
+        background-color: #40407A;
+        color: #fff;
+        background-size: 100% 100%;
+        font-size: 120%;
+        min-height: 200px;
+        margin-top: 50px;
+    }
+    header a:link{text-decoration: none;display: block;color: #40407A;}
+    header a:visited{text-decoration: none;display: block;color: #f5f5f5;}
+    header a:hover{text-decoration: none;display: block;color: #fff;}
+    
+    /* h1{
+        line-height: 200%;
+        padding-top: 50px;
+        padding-left: 2em;
+    } */
+
+    h3{
+        font-size: 150%;
+    }
+    h2{
+        font-size: 200%;
+    }
+    
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: right;
+        background-color: #fff;
+        margin: 0;
+        padding-right: 0;
+        font-weight: bold;
+        padding: .5em;
+        width: 100%;
+        z-index: 9999; /* ensures it is on top */
+    }
+    nav a{
+        text-decoration: none; /*removes the hyperlink underline*/
+        display: block;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        font-size: 1.2em;
+    }
+    
+    nav li{
+        width: 40%;
+        padding: 0 1em 0 1em;
+        display: inline;
+    }
+    
+    
+    
+    nav a:link{color:#3F2860}
+    nav a:visited{color: #497777;}
+    nav a:hover{color: #a26100;border: 3px inset #3333}
+    
+    
+    footer{
+        background-color: #80cbc4;
+        font-size: .60em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+    }
+    
+    
+    /*  classes styling */
+    
+    .studio{
+        color: #40407A;
+        font-style: italic;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /*  id styling */
+    /* purpose of of this id is to wrap the text */
+    #wrapper{
+        background-color: #f5f5f5;
+        padding:2em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /* Home page, header will be larger */
+    .home{
+        height: 20vh;
+        padding-left: 10%;
+        padding-top: 2em;
+    }
+    
+    /* Other pages, header will be slightly smaller */
+    .content{
+        height: 10vh;
+        padding-left: 10%;
+        padding-top: 2em;
+    }
+    
+    /* #mathero{
+        background-image: url("images/yogamat.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        height: 300px;
+        padding-bottom: 1em;
+    }
+    
+    #loungehero{
+        background-image: url("images/yogalounge.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        height: 300px;
+        padding-bottom: 1em;
+    } */
+    
+    #mobile{
+        display: inline;
+    }
+    
+    #desktop{
+        display: none;
+    }
+    
+    
+    section{
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+    
+    
+    /* #flow{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    } */
+    
+    /* #clear{
+        clear: both;
+    }*/
+    
+    
+    /* global property */
+    * {box-sizing: border-box;}
+    
+    }
+

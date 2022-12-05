@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="content">
+            <h1><a href="index.html">About Me</a></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav> 
+
+        <div id="wrapper">
+            <main>
+                <div id="hero">
+                    <img src="images/pic2.jfif" height=275 width=850 alt="Baseball and Bat in"><br>
+                </div>
+                <h2>Contact</h2>
+                <p>Fill out the form below to contact Me. All information is required.</p>
+                <form method="post" action="https://webdevbasics.net/scripts/yoga.php">
+                    <label for="myName">Name:</label>
+                    <input id="myName" placeholder="Your Name" type="text" required>
+                    <label for="myEmail">E-mail:</label>
+                    <input id="myEmail" placeholder="Your Email" type="email" required>
+                    <datalist id="referral">
+                        <option value="Google"></option>
+                        <option value="Facebook"></option>
+                        <option value="Freind"></option>
+                        <option value="Radio"></option>
+                    </datalist>
+
+                    <label for="myComments">Message:</label>
+                    <textarea id="myComments" rows=2 cols=20></textarea>
+                    <button id="mySubmit">Send Now</button>
+                </form>
+            </main>
+        </div>
+    </body>
+</html>
